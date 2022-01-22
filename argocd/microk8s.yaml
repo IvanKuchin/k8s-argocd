@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: microk8s-apps
+  namespace: argocd
+spec:
+  project: default
+  source:
+    path: argocd/microk8s/
+    repoURL: https://github.com/IvanKuchin/k8s-argocd
+    targetRevision: master
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+
+
+
