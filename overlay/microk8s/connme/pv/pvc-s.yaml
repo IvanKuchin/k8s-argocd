@@ -54,3 +54,24 @@ spec:
     path: /storage_local/www.connme.ru/images
     server: 192.168.170.36
   storageClassName: slow
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: www.connme.ru-goaccess-pv
+  labels:
+    type: nfs
+spec:
+  storageClassName: slow
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  #mountOptions:
+  #    - hard
+  nfs:
+    path: /storage_local/www.connme.ru/goaccess
+    server: 192.168.170.36
+  claimRef:
+    name: goaccess-pvc
+    namespace: www-connme-ru

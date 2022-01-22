@@ -13,7 +13,9 @@ spec:
     namespace: www-connme-ru
     server: https://kubernetes.default.svc
   syncPolicy:
-    automated: {}
+    automated:
+      selfHeal: true
+      prune: true
 
 
 

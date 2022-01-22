@@ -1,3 +1,7 @@
 resources:
 - ../../../../base/chat
 
+images:
+- name: chat-image
+  newName: registry.conn-me.ru:5000/connme.ru-chat
+  newTag: v1.1.14

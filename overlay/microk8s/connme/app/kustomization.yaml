@@ -4,16 +4,13 @@ resources:
 images:
 - name: app-image
   newName: registry.conn-me.ru:5000/connme.ru-app
-  newTag: v1.0.0
-- name: chat-image
-  newName: registry.conn-me.ru:5000/connme.ru-chat
-  newTag: v1.0.0
+  newTag: v1.1.14
 - name: images-image
   newName: registry.conn-me.ru:5000/connme.ru-images
-  newTag: v1.0.0
+  newTag: v1.1.14
 - name: cron-image
   newName: registry.conn-me.ru:5000/connme.ru-cron
-  newTag: v1.0.0
+  newTag: v1.1.14
 
 commonAnnotations:
   oncallPager: 800-555-1212
