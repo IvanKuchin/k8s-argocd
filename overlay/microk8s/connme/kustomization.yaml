@@ -8,6 +8,3 @@ resources:
   - ingress
   - pv
 namespace: www-connme-ru
-images:
-  - name: registry.conn-me.ru:5000/connme.ru-chat
-    newTag: v1.1.16
