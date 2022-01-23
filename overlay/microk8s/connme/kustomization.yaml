@@ -1,10 +1,13 @@
 resources:
-- adminer
-- app
-- chat
-#- backup
-- db
-- goaccess
-- ingress
-- pv
+  - adminer
+  - app
+  - chat
+  #- backup
+  - db
+  - goaccess
+  - ingress
+  - pv
 namespace: www-connme-ru
+images:
+  - name: registry.conn-me.ru:5000/connme.ru-chat
+    newTag: v1.1.16
