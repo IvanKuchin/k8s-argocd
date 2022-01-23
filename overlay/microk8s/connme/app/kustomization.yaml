@@ -12,5 +12,3 @@ images:
   newName: registry.conn-me.ru:5000/connme.ru-cron
   newTag: v1.1.14
 
-commonAnnotations:
-  oncallPager: 800-555-1212
