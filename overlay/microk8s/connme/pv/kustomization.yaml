@@ -1,5 +1,5 @@
 resources:
-- pvc-s.yaml
+- pv-s.yaml
 
 #patchesStrategicMerge:
 #- app-ingress.yaml
