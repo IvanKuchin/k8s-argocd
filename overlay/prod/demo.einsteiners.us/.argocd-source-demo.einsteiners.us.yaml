@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - ghcr.io/ivankuchin/einsteiners.us-stage:20220207T043459
