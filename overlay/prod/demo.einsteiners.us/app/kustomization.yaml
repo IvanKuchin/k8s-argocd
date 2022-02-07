@@ -1,5 +1,7 @@
 resources:
-- ../../../../base/app
+  - app-deployment.yaml
+  - apachelogs-pvc.yaml
+  - images-pvc.yaml
 
 images:
 - name: app-image
