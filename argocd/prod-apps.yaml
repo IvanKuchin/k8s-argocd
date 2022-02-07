@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: microk8s-apps
+  name: prod-apps
   namespace: argocd
 spec:
   project: default
