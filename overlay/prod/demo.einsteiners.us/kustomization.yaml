@@ -3,7 +3,7 @@ resources:
   - app
   - backup
   - db
-  - goaccess
+  #- goaccess
   - ingress
   - pv
 namespace: demo-einsteiners-us
