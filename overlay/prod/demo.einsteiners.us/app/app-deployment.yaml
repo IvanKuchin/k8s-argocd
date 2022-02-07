@@ -43,7 +43,7 @@ spec:
         #    name: admin-htpasswd
       containers:
         - name: app-container
-          image: ghcr.io/ivankuchin/einsteiners.us-stage:latest
+          image: app-image
           ports:
             - containerPort: 80
           volumeMounts:
