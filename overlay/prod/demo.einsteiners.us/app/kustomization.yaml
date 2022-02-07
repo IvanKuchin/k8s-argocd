@@ -6,5 +6,5 @@ resources:
 images:
 - name: app-image
   newName: ghcr.io/ivankuchin/einsteiners.us-stage
-  newTag: latest
+  newTag: 20220205T191624
 
