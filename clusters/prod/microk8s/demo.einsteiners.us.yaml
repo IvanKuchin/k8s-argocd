@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: demo.einsteiners.us
+  namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: app-alias=ghcr.io/ivankuchin/einsteiners.us-stage:latest
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/git-creds
+    argocd-image-updater.argoproj.io/git-branch: master
+    argocd-image-updater.argoproj.io/app-alias.update-strategy: latest
+    argocd-image-updater.argoproj.io/app-alias.allow-tags: regexp:^[0-9]+T[0-9]+$
+spec:
+  project: default
+  source:
+    path: overlay/prod/demo.einsteiners.us
+    repoURL: https://github.com/IvanKuchin/k8s-argocd
+    targetRevision: master
+  destination:
+    namespace: demo-einsteiners-us
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
