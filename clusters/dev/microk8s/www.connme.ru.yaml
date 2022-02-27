@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: connme
+  name: www.connme.ru
   namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/image-list: registry.conn-me.ru:5000/connme.ru-app:1.x.x, registry.conn-me.ru:5000/connme.ru-images:1.x.x, registry.conn-me.ru:5000/connme.ru-cron:1.x.x, registry.conn-me.ru:5000/connme.ru-chat:1.x.x
