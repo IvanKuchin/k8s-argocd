@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - registry.conn-me.ru:5000/connme.ru-chat:v1.1.17

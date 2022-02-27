@@ -10,7 +10,7 @@ metadata:
 spec:
   project: default
   source:
-    path: overlay/microk8s/connme
+    path: apps/dev/microk8s/www.connme.ru
     repoURL: https://github.com/IvanKuchin/k8s-argocd
     targetRevision: master
   destination:
