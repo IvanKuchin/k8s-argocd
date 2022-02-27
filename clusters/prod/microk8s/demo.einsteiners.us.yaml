@@ -12,7 +12,7 @@ metadata:
 spec:
   project: default
   source:
-    path: overlay/prod/demo.einsteiners.us
+    path: apps/prod/microk8s/demo.einsteiners.us
     repoURL: https://github.com/IvanKuchin/k8s-argocd
     targetRevision: master
   destination:
