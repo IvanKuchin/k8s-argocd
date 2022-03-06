@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - ghcr.io/ivankuchin/einsteiners.us-stage:20220305T194034
+  - ghcr.io/ivankuchin/einsteiners.us-stage:20220306T072308
