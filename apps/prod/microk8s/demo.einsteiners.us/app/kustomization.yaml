@@ -1,6 +1,5 @@
 resources:
   - app-deployment.yaml
-  - apachelogs-pvc.yaml
   - images-pvc.yaml
 
 images:
