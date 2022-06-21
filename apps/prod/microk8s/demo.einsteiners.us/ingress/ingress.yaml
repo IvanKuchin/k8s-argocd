@@ -43,21 +43,3 @@ spec:
             name: adminer-service
             port:
               number: 8080
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  annotations:
-  name: goaccess-ingress
-spec:
-  rules:
-  - host: demo-goaccess.einsteiners.us
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: goaccess-service
-            port:
-              number: 80
