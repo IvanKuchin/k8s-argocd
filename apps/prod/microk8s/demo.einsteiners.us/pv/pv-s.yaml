@@ -13,8 +13,8 @@ spec:
   #mountOptions:
   #    - hard
   nfs:
-    path: /storage_local/demo.einsteiners.us/mysql
-    server: 172.16.17.69
+    path: /storage1/demo.einsteiners.us/mysql
+    server: 172.16.17.70
   claimRef:
     name: db-pvc
     namespace: demo-einsteiners-us
@@ -34,8 +34,8 @@ spec:
   #mountOptions:
   #    - hard
   nfs:
-    path: /storage_local/demo.einsteiners.us/images
-    server: 172.16.17.69
+    path: /storage1/demo.einsteiners.us/images
+    server: 172.16.17.70
   claimRef:
     name: images-pvc
     namespace: demo-einsteiners-us
